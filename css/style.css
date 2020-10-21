@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Tsukushi A Round Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
 
 body {
@@ -11,24 +10,36 @@ body {
     text-align: center;
     color: #333;
     margin: 0 auto;
-    font-family: "游ゴシック体", YuGothic;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-weight: 500;
 }
 
 /*ヘッダー*/
+#header {}
 
 /*メニューバー*/
+nav {}
 
 /*about*/
+#about {}
+
+/*プログラム紹介*/
+#program {}
 
 /*コース紹介*/
+#courses {}
 
-/*メンター紹介*/
+/*インタビュー*/
+#interview {}
 
 /*join*/
+#join {}
 
 /*SNS*/
+#sns {}
 
 /*フッター*/
+footer {}
 
 /*fuwat*/
 
