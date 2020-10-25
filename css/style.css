@@ -175,20 +175,180 @@ nav img{
 }
 /*コース紹介*/
 #courses {
-    
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    background-size: cover;
+}
+
+.all-courses img{
+    height: 130px;
+}
+.all-courses ul{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
+.all-courses p{
+    font-size: 12px;
+}
+
+.mentor-example{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.mentor-example a{
+    color: #fff;
+    background-color: skyblue; 
+    font-size: 27px;
+}
+
+.mentor-example a:hover{
+    background-color: #63BBE1;
+}
+
+.example-box span{
+    color: #fff;
+    font-size: 14px;
+    background-color: #000;
+    font-family: "Yu Gothic";
+}
+
+.example-box iframe{
+     width: 370px;
+    height: 210px;
+}
+
+#lit{
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-size: cover;
+    color: #000;
+}
+
+.lit-box{
+    display: flex;
+}
+
+.lit img{
+    width: 273px;
+    height: 55px;
+}
+
+.lit p{
+    width: 514px;
+    font-size: 14px;
 }
 
 /*インタビュー*/
-#interview {}
+#interview {
+     margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #4D4D4D;
+    background-size: cover;
+    color: #fff;
+}
+
+.interview-detail{
+    display: flex;
+}
+
+.interview img{
+    width: 120px;
+}
+
+.interview-pic p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.square-pic p{
+    text-align: center;
+    font-size: 14px;
+}
 
 /*join*/
-#join {}
+#join {
+     margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #151E43;
+    background-size: cover;
+    color: #fff;
+     text-align: center;
+}
 
+.join-box{
+    width: 60%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-size: cover;
+    color: #000;
+    border-radius: 10px;
+     text-align: left;
+}
+.join-detail a{
+    font-size: 15px;
+    color: #EE1F79;
+    padding: 20px, 30px;
+}
 /*SNS*/
-#sns {}
+#sns {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-size: cover;
+    color: #000;
+     text-align: center;
+}
+
+.sns-detail a{
+    font-size: 12px;
+    color: #000;
+    list-style-type: none;
+}
+.sns-detail a:hover{
+    color: #EE1F79;
+}
+.sns-detail img{
+    width: 100px;
+    height: 100px;
+}
 
 /*フッター*/
-footer {}
+footer {
+     margin: 0 auto;
+    width: 100%;
+    background-color: #151E43;
+    background-size: cover;
+    color: #fff;
+     text-align: center;
+    font-size: 14px;
+}
 
 /*fuwat*/
 
