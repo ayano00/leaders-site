@@ -19,40 +19,40 @@ body {
 }
 
 /*文字色*/
-h1{
-    
-}
-
-h2{
+h2 {
     font-size: 37px;
     font-family: "Yu Gothic";
+    border-bottom: 3px solid #EE1F79;
+    padding-bottom: 25px;
 }
 
-h3{
+h3 {
     font-size: 23px;
     font-family: "Yu Gothic";
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 
 /*ヘッダー*/
 #header {
-     height: 100vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
     background-image: url(../images/mainA_bg2.png), url(../images/slide1.jpg);
-     background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-position: center center;
-  background-size: cover;
+    background-size: cover;
 }
 
-.header .highlight span{
+.header .highlight span {
     color: #fff;
     font-size: 21px;
     background-color: #000;
     font-family: "Yu Gothic";
 }
 
-.header .support p{
+.header .support p {
     color: #fff;
     font-size: 14px;
     font-family: "Yu Gothic";
@@ -66,17 +66,18 @@ nav {
     height: 60px;
     display: block;
     position: fixed;
-     font-family: "Futura-Med";
+    font-family: "Futura-Med";
     text-align: right;
+    z-index: 100;
 }
 
-nav li{
+nav li {
     display: inline-block;
     list-style-type: none;
     padding-right: 45px;
 }
 
-nav li:first-child{
+nav li:first-child {
     text-align: right;
 }
 
@@ -89,13 +90,14 @@ nav a {
     position: relative;
 }
 
-nav a:hover{
+nav a:hover {
     color: #ed1e79;
 }
 
-nav img{
+nav img {
     width: 290px;
 }
+
 /*about*/
 #about {
     margin: 0 auto;
@@ -108,22 +110,31 @@ nav img{
     background-size: cover;
     color: #fff;
 }
-.about h2{
-/*    color: #fff;*/
-}
-.left-box{
-    width: 520px;
-}
-.about-detail{
-    display: flex;
-     justify-content: center;
-    align-items: center;
+
+.about {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);  
 }
 
-.right-box iframe{
+.about-detail {
+    margin: 80px 180px 80px 180px;
+}
+
+.box-detail {
+    display: flex;
+}
+
+.left-box {
+    width: 520px;
+}
+
+.right-box iframe {
     width: 370px;
     height: 210px;
+    margin-top: 25px;
+    margin-left: 25px;
 }
+
 /*プログラム紹介*/
 #program {
     margin: 0 auto;
@@ -135,44 +146,69 @@ nav img{
     background-color: #fff;
     background-size: cover;
 }
+
+.program-detail {
+    margin: 40px 180px 80px 180px;
+}
+
 .program-white {
     color: #333;
     display: flex;
-     justify-content: center;
-    align-items: center;
 }
 
-.program-box h4{
+.program-box h4 {
     color: #141d42;
     font-size: 19px;
 }
-.program-box p{
+
+.program-box p {
     color: #333;
     font-size: 12px;
+    margin: 0 auto;
 }
 
-.program .right-box img{
+.program .right-box img {
     width: 360px;
     height: 250px;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
-.program-yellow{
+.program-yellow {
     background-color: #FEEB07;
-    display: flex;
 }
-.program-yellow img{
+
+.yellow-detail {
+    margin: 80px 180px 80px 180px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.program-yellow img {
+    width: 286px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.program-box {
+    margin: 0 auto;
+    width: 286px;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-box figure {
+    background-color: #fff;
     width: 286px;
     height: 200px;
 }
-.program-box{
+
+.program-box p {
+    line-height: 25px;
+    padding: 15px;
     margin: 0 auto;
-    width: 286px;
-     justify-content: center;
-    align-items: center;
 }
-.program-box p{
-    background-color: #fff;
-}
+
 /*コース紹介*/
 #courses {
     margin: 0 auto;
@@ -185,106 +221,173 @@ nav img{
     background-size: cover;
 }
 
-.all-courses img{
+.courses-detail {
+    margin: 80px 180px 80px 180px;
+}
+
+.all-courses img {
     height: 130px;
 }
-.all-courses ul{
+
+.all-courses ul {
     display: flex;
-     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    list-style: none;
 }
-.all-courses p{
+
+.all-courses li {
+    text-align: center;
+    width: 130px;
+    margin: 10px;
+}
+
+.all-courses span {
     font-size: 12px;
 }
 
-.mentor-example{
+.all-courses p {
+    margin-top: 50px;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.mentor-example {
     justify-content: center;
     align-items: center;
-    display: flex;
+    margin-top: 50px;
 }
 
-.mentor-example a{
+.mentor-example p {
     color: #fff;
-    background-color: skyblue; 
+    background-color: #28ABE1;
     font-size: 27px;
+    width: 420px;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-.mentor-example a:hover{
+.mentor-example p:hover {
     background-color: #63BBE1;
 }
 
-.example-box span{
+.example-detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.example-box span {
     color: #fff;
     font-size: 14px;
     background-color: #000;
     font-family: "Yu Gothic";
+    padding: 10px;
+    margin-left: 25px;
 }
 
-.example-box iframe{
-     width: 370px;
+.example-box iframe {
+    width: 370px;
     height: 210px;
+    margin: 20px 25px 40px 25px;
 }
 
-#lit{
+#lit {
     margin: 0 auto;
     width: 100%;
     position: relative;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
     background-size: cover;
     color: #000;
 }
 
-.lit-box{
+.lit-detail {
+    margin: 80px 180px 80px 180px;
+}
+
+.lit-box {
     display: flex;
 }
 
-.lit img{
+.lit img {
     width: 273px;
     height: 55px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
-.lit p{
-    width: 514px;
+.lit p {
+    width: 500px;
     font-size: 14px;
+    line-height: 30px;
+}
+
+.lit iframe {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.clip {
+    margin: 0 auto;
+    background-color:  #4D4D4D;
+    height: 100px;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(100% 0, 100% 0, 100% 80%, 0 100%);  
 }
 
 /*インタビュー*/
 #interview {
-     margin: 0 auto;
+    margin: 0 auto;
     width: 100%;
     position: relative;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     background-color: #4D4D4D;
     background-size: cover;
     color: #fff;
 }
 
 .interview-detail{
+    margin: 80px 180px 80px 180px;
+}
+
+.pic-detail {
     display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
 }
 
-.interview img{
+.interview img {
     width: 120px;
+    margin: 12px;
+}
+.pic-detail2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
 }
 
-.interview-pic p{
+.pic-detail2 img {
+    margin: 23px;
+}
+
+.interview-pic p {
     text-align: center;
     font-size: 14px;
 }
 
-.square-pic p{
+.square-pic p {
     text-align: center;
     font-size: 14px;
 }
 
 /*join*/
 #join {
-     margin: 0 auto;
+    margin: 0 auto;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -293,10 +396,18 @@ nav img{
     background-color: #151E43;
     background-size: cover;
     color: #fff;
-     text-align: center;
+    text-align: center;
 }
 
-.join-box{
+.join-detail{
+    margin: 80px 180px 80px 180px;
+}
+
+.join-detail h3{
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+.join-box {
     width: 60%;
     overflow: hidden;
     justify-content: center;
@@ -305,13 +416,22 @@ nav img{
     background-size: cover;
     color: #000;
     border-radius: 10px;
-     text-align: left;
+    text-align: left;
+    font-size: 14px;
 }
-.join-detail a{
+
+.join-box ul {
+    list-style: none;
+}
+
+.join-a a {
     font-size: 15px;
-    color: #EE1F79;
-    padding: 20px, 30px;
+    background-color: #EE1F79;
+    color: white;
+    margin: 20px, 30px;
+    text-decoration: none;
 }
+
 /*SNS*/
 #sns {
     margin: 0 auto;
@@ -323,31 +443,47 @@ nav img{
     background-color: #fff;
     background-size: cover;
     color: #000;
-     text-align: center;
+    text-align: center;
 }
 
-.sns-detail a{
-    font-size: 12px;
-    color: #000;
-    list-style-type: none;
+.sns-detail {
+    margin: 80px 180px 80px 180px;
 }
-.sns-detail a:hover{
+
+.sns-detail a {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+}
+
+.sns-detail a:hover {
     color: #EE1F79;
 }
-.sns-detail img{
+
+.sns-detail img {
     width: 100px;
     height: 100px;
+    margin: 10px;
+}
+
+.sns-fb {
+    margin-top: 30px;
+}
+
+.sns-ig {
+    margin-top: 30px;
 }
 
 /*フッター*/
 footer {
-     margin: 0 auto;
+    margin: 0 auto;
     width: 100%;
     background-color: #151E43;
     background-size: cover;
     color: #fff;
-     text-align: center;
+    text-align: center;
     font-size: 14px;
+    padding: 5px;
 }
 
 /*fuwat*/
