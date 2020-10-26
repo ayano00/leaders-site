@@ -332,14 +332,6 @@ nav img {
     margin-left: 25px;
 }
 
-.clip {
-    margin: 0 auto;
-    background-color:  #4D4D4D;
-    height: 100px;
-  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(100% 0, 100% 0, 100% 80%, 0 100%);  
-}
-
 /*インタビュー*/
 #interview {
     margin: 0 auto;
@@ -351,8 +343,15 @@ nav img {
     color: #fff;
 }
 
+.interview {
+    margin: 0 auto;
+    background-color:  #4D4D4D;
+ 
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
 .interview-detail{
-    margin: 80px 180px 80px 180px;
+    margin: 180px 180px 80px 180px;
 }
 
 .pic-detail {
