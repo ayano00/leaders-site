@@ -45,19 +45,49 @@ h3 {
     background-size: cover;
 }
 
-.header .highlight span {
-    color: #fff;
-    font-size: 21px;
-    background-color: #000;
-    font-family: "Yu Gothic";
+.header-contents{
+    margin: 100px 180px 80px 150px;
+    position: relative;
 }
 
-.header .support p {
+.header-contents .logo{
+    width: 530px;
+}
+
+.header-contents .list{
+    width: 425px;
+}
+.highlight span {
+    color: #fff;
+    font-size: 20px;
+    background-color: #000;
+    font-family: "Yu Gothic";
+    padding: 3px;
+}
+
+.support  {
     color: #fff;
     font-size: 14px;
     font-family: "Yu Gothic";
+    margin: 5px;
 }
-
+.right-dots{
+    position: absolute;
+}
+.dots{
+top: -570px;
+  left: 800px;
+    width: 300px;
+     position: absolute;
+    z-index: 50;
+}
+.arrow{
+  top: -250px;
+  left: 800px;
+    width: 30px;
+     position: absolute;
+    z-index: 50;
+}
 /*メニューバー*/
 nav {
     overflow: hidden;
@@ -247,7 +277,7 @@ nav img {
 }
 
 .all-courses p {
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 13px;
     line-height: 25px;
 }
@@ -258,19 +288,22 @@ nav img {
     margin-top: 50px;
 }
 
-.mentor-example p {
+.mentor-title{
+    text-align: center;
+}
+.mentor-title p{
     color: #fff;
     background-color: #28ABE1;
     font-size: 27px;
     width: 420px;
     height: 60px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+     display: inline-block;
+    line-height: 60px;
 }
 
-.mentor-example p:hover {
+.mentor-title p:hover {
     background-color: #63BBE1;
 }
 
@@ -354,6 +387,13 @@ nav img {
     margin: 180px 180px 80px 180px;
 }
 
+.mentor-now{
+    margin-bottom: 100px;
+}
+.mentor-past{
+    margin-bottom: 100px;
+}
+
 .pic-detail {
     display: flex;
     flex-wrap: wrap;
@@ -400,6 +440,7 @@ nav img {
 
 .join-detail{
     margin: 80px 180px 80px 180px;
+    text-align: center;
 }
 
 .join-detail h3{
@@ -409,26 +450,48 @@ nav img {
 .join-box {
     width: 60%;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
     background-size: cover;
     color: #000;
     border-radius: 10px;
     text-align: left;
     font-size: 14px;
+     display: inline-block;
 }
 
 .join-box ul {
     list-style: none;
 }
 
+.join-title{
+    たぶんboldにする
+}
+
+.join-a{
+    margin-top: 50px;
+    margin-bottom: 150px;
+     position: relative;
+}
+.join-a img{
+    width: 200px;
+    height: 80px;
+    position: relative;
+    padding-top: 20px;
+     position: relative;
+}
+
 .join-a a {
     font-size: 15px;
     background-color: #EE1F79;
     color: white;
-    margin: 20px, 30px;
+/*
+    margin-top: 20px;
+    margin-bottom: 20px;
+*/
+    padding: 60px 60px;
     text-decoration: none;
+    border-radius: 70px;
+    position: relative;
 }
 
 /*SNS*/
