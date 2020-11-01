@@ -519,7 +519,9 @@ nav img {
     text-align: center;
     font-size: 14px;
 }
-
+.interview-small {
+    font-size: 12px;
+}
 .square-pic p {
     text-align: center;
     font-size: 14px;
@@ -831,11 +833,11 @@ footer {
     }
 
     .highlight span {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .header-contents .list {
-        width: 200px;
+        width: 250px;
     }
 
     nav {
@@ -854,19 +856,21 @@ footer {
 
     /*    アバウト*/
     .about {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
     }
 
     .about-detail {
         margin: 30px 15px 30px 15px;
     }
-.about h2:before {
-    top: 100px;
-    left: 15px;
-}
+
+    .about h2:before {
+        top: 100px;
+        left: 15px;
+    }
+
     .about .left-box p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .left-box {
@@ -874,12 +878,170 @@ footer {
     }
 
     .right-box iframe {
-        width: 370px;
+        width: 320px;
         height: 210px;
         align-content: center;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 100px;
     }
 
     .box-detail {
         flex-direction: column;
     }
+
+    /*    プログラム*/
+    .program-detail {
+        margin: 30px 15px 30px 15px;
+    }
+
+    .program-white {
+        flex-direction: column;
+        width: 100%
+    }
+
+    .program .left-box {
+        width: 100%;
+    }
+
+    .program .left-box p {
+        font-size: 14px;
+    }
+
+    .program h2:before {
+        top: 100px;
+    }
+    
+    .program .right-box img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .yellow-detail {
+        margin: 0px 15px 0px 15px;
+/*
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+*/
+    }
+
+    /*    コース紹介*/
+    .courses-detail {
+    margin: 30px 15px 30px 15px;
+}
+
+.all-courses img {
+    height: 100px;
+}
+
+.all-courses ul {
+    justify-content: space-between;
+}
+
+.all-courses li {
+    width: 150px;
+    margin: 10px;
+}
+
+.all-courses p {
+    font-size: 11px;
+}
+
+.mentor-example {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+}
+
+.mentor-title p {
+    font-size: 18px;
+    width: 250px;
+    height: 60px;
+    }
+
+.example-box span {
+    font-size: 14px;
+}
+
+.example-box iframe {
+    width: 340px;
+    height: 200px;
+    margin: 20px 25px 40px 25px;
+}
+
+.lit-detail {
+     margin: 30px 15px 30px 15px;
+}
+
+.lit-box {
+    flex-direction: column;
+}
+
+.lit img {
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.lit p {
+    width: 100%;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.lit iframe {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+/*インタビュー*/
+   .interview {
+
+    -webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+}
+
+.interview-detail {
+    margin: 80px 15px 30px 15px;
+}
+    .mentor-now{
+        margin-bottom: 50px;
+    }
+    .interview-detail h3{
+        font-size: 17px;
+    }
+    .mentor-now p{
+        font-size: 12px;
+    }
+.mentor-past {
+    margin-bottom: 50px;
+}
+
+.pic-detail {
+    margin: 25px;
+}
+
+.pic-detail2 {
+    margin: 25px;
+}
+
+.pic-detail2 img {
+    margin: 12px;
+}
+
+.interview-pic p {
+    font-size: 12px;
+}
+.interview-small p{
+    font-size: 9px;
+}
+.square-pic p {
+    font-size: 12px;
+}
+
+.interview h2:before {
+    top: 150px;
+}
 }
