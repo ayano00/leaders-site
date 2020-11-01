@@ -519,9 +519,11 @@ nav img {
     text-align: center;
     font-size: 14px;
 }
+
 .interview-small {
     font-size: 12px;
 }
+
 .square-pic p {
     text-align: center;
     font-size: 14px;
@@ -620,9 +622,22 @@ table td {
     position: relative;
 }
 
+.join-a a {
+    text-decoration: none;
+}
+
+.join-a figure {
+    margin: 0 auto;
+    width: 400px;
+    height: 130px;
+    background-color: #EE1F79;
+    border-radius: 70px;
+}
+
 .join-a img {
     width: 200px;
     height: 80px;
+    margin-top: 10px;
     vertical-align: center;
     align-items: center;
 }
@@ -630,16 +645,6 @@ table td {
 .join-a p {
     font-size: 15px;
     color: white;
-}
-
-.join-a a {
-
-    background-color: #EE1F79;
-    font-size: 90px;
-    padding: 50px;
-    text-decoration: none;
-    border-radius: 70px;
-    position: relative;
 }
 
 /*SNS*/
@@ -791,17 +796,18 @@ footer {
     }
 
     /*文字色*/
-    h2 {
-        font-size: 25px;
-        display: inline-block;
-        margin-bottom: 1em;
-        padding-bottom: 25px;
-    }
+h2 {
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 1em;
+    padding-bottom: 25px;
+}
 
-    h2:before {
-        left: 15px;
-        top: 40px;
-    }
+h2:before {
+    left: 30px;
+    top: 40px;
+    display: inline-block;
+}
 
     h3 {
         font-size: 18px;
@@ -866,7 +872,6 @@ footer {
 
     .about h2:before {
         top: 100px;
-        left: 15px;
     }
 
     .about .left-box p {
@@ -912,7 +917,7 @@ footer {
     .program h2:before {
         top: 100px;
     }
-    
+
     .program .right-box img {
         width: 300px;
         height: 200px;
@@ -920,128 +925,201 @@ footer {
 
     .yellow-detail {
         margin: 0px 15px 0px 15px;
-/*
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-*/
     }
 
     /*    コース紹介*/
     .courses-detail {
-    margin: 30px 15px 30px 15px;
-}
-
-.all-courses img {
-    height: 100px;
-}
-
-.all-courses ul {
-    justify-content: space-between;
-}
-
-.all-courses li {
-    width: 150px;
-    margin: 10px;
-}
-
-.all-courses p {
-    font-size: 11px;
-}
-
-.mentor-example {
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px; 
-}
-
-.mentor-title p {
-    font-size: 18px;
-    width: 250px;
-    height: 60px;
+        margin: 30px 15px 30px 15px;
     }
 
-.example-box span {
-    font-size: 14px;
-}
+    .all-courses img {
+        height: 100px;
+    }
 
-.example-box iframe {
-    width: 340px;
-    height: 200px;
-    margin: 20px 25px 40px 25px;
-}
+    .all-courses ul {
+        justify-content: space-between;
+    }
 
-.lit-detail {
-     margin: 30px 15px 30px 15px;
-}
+    .all-courses li {
+        width: 150px;
+        margin: 10px;
+    }
 
-.lit-box {
-    flex-direction: column;
-}
+    .all-courses p {
+        font-size: 11px;
+    }
 
-.lit img {
-    width: 250px;
-    height: 50px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
+    .mentor-example {
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
 
-.lit p {
-    width: 100%;
-    font-size: 13px;
-    line-height: 30px;
-}
+    .mentor-title p {
+        font-size: 18px;
+        width: 250px;
+        height: 60px;
+    }
 
-.lit iframe {
-    margin-top: 15px;
-    margin-left: 15px;
-}
-/*インタビュー*/
-   .interview {
+    .example-box span {
+        font-size: 14px;
+    }
 
-    -webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
-}
+    .example-box iframe {
+        width: 340px;
+        height: 200px;
+        margin: 20px 25px 40px 25px;
+    }
+.courses h2:before {
+        top: 100px;
+    }
+    .lit-detail {
+        margin: 30px 15px 30px 15px;
+    }
 
-.interview-detail {
-    margin: 80px 15px 30px 15px;
-}
-    .mentor-now{
+    .lit-box {
+        flex-direction: column;
+    }
+
+    .lit img {
+        width: 250px;
+        height: 50px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .lit p {
+        width: 100%;
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+    .lit iframe {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+.lit h2:before {
+        top: 100px;
+    }
+    /*インタビュー*/
+    .interview {
+
+        -webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .interview-detail {
+        margin: 80px 15px 30px 15px;
+    }
+
+    .mentor-now {
         margin-bottom: 50px;
     }
-    .interview-detail h3{
+
+    .interview-detail h3 {
         font-size: 17px;
     }
-    .mentor-now p{
+
+    .mentor-now p {
+        font-size: 13px;
+    }
+
+    .mentor-past {
+        margin-bottom: 50px;
+    }
+
+    .mentor-past p {
+        font-size: 13px;
+    }
+
+    .company-interview p {
+        font-size: 13px;
+    }
+
+    .pic-detail {
+        margin: 25px;
+    }
+
+    .pic-detail2 {
+        margin: 25px;
+    }
+
+    .pic-detail2 img {
+        margin: 12px;
+    }
+
+    .interview-pic p {
         font-size: 12px;
     }
-.mentor-past {
-    margin-bottom: 50px;
-}
 
-.pic-detail {
-    margin: 25px;
-}
+    .interview-small p {
+        font-size: 9px;
+    }
 
-.pic-detail2 {
-    margin: 25px;
-}
+    .square-pic p {
+        font-size: 12px;
+    }
 
-.pic-detail2 img {
-    margin: 12px;
-}
+    .interview h2:before {
+        top: 150px;
+    }
 
-.interview-pic p {
-    font-size: 12px;
-}
-.interview-small p{
-    font-size: 9px;
-}
-.square-pic p {
-    font-size: 12px;
-}
+    /*join*/
+    #join {
+        background-color: #000;
+    }
 
-.interview h2:before {
-    top: 150px;
-}
+    .join-detail {
+        margin: 80px 15px 0px 15px;
+    }
+
+    .join h2:before {
+        left: 50%;
+        top: 135px;
+    }
+
+    .join-detail h3 {
+        margin-top: 0px;
+        margin-bottom: 45px;
+    }
+
+    .smalltext {
+        font-size: 12px;
+    }
+
+    .join-box {
+        width: 95%;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    table td {
+        padding: 10px;
+        display: block;
+        width: 95%;
+    }
+
+    .join-a figure {
+        width: 300px;
+        height: 100px;
+        border-radius: 60px;
+    }
+
+    .join-a img {
+        width: 150px;
+        height: 60px;
+    }
+
+    /* SNS*/
+    .sns-detail {
+        margin: 50px 15px 40px 15px;
+    }
+
+    .sns-fb {
+        margin-top: 10px;
+    }
+    .sns h2:before {
+        top: 110px;
+    }
+
 }
