@@ -416,7 +416,6 @@ nav img {
     color: #fff;
     font-size: 14px;
     background-color: #000;
-    font-family: "Yu Gothic";
     padding: 10px;
     margin-left: 25px;
 }
@@ -732,6 +731,16 @@ footer {
     padding: 5px;
 }
 
+/*ハンバーガーメニュー*/
+.drawer{
+    z-index: 600;
+}
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:after,
+.drawer-hamburger-icon:before {
+    background-color: #fff;
+}
 /*fuwat*/
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
@@ -776,6 +785,7 @@ footer {
 
 /*レスポンシブスマホ*/
 @media screen and (max-width: 1500px) {
+/*
     .drawer-nav {
         opacity: 0;
     }
@@ -783,6 +793,7 @@ footer {
     .drawer-toggle {
         opacity: 0;
     }
+*/
 
 }
 
@@ -796,18 +807,18 @@ footer {
     }
 
     /*文字色*/
-h2 {
-    font-size: 25px;
-    display: inline-block;
-    margin-bottom: 1em;
-    padding-bottom: 25px;
-}
+    h2 {
+        font-size: 25px;
+        display: inline-block;
+        margin-bottom: 1em;
+        padding-bottom: 25px;
+    }
 
-h2:before {
-    left: 30px;
-    top: 40px;
-    display: inline-block;
-}
+    h2:before {
+        left: 30px;
+        top: 40px;
+        display: inline-block;
+    }
 
     h3 {
         font-size: 18px;
@@ -816,6 +827,7 @@ h2:before {
     }
 
     /*    ハンバーガーメニュー*/
+/*
     .drawer-nav {
         opacity: 1;
     }
@@ -823,6 +835,7 @@ h2:before {
     .drawer-toggle {
         opacity: 1;
     }
+*/
 
     /*    ヘッダー*/
     #header {
@@ -962,7 +975,7 @@ h2:before {
     }
 
     .example-box span {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .example-box iframe {
@@ -970,9 +983,11 @@ h2:before {
         height: 200px;
         margin: 20px 25px 40px 25px;
     }
-.courses h2:before {
+
+    .courses h2:before {
         top: 100px;
     }
+
     .lit-detail {
         margin: 30px 15px 30px 15px;
     }
@@ -998,12 +1013,13 @@ h2:before {
         margin-top: 15px;
         margin-left: 15px;
     }
-.lit h2:before {
+
+    .lit h2:before {
         top: 100px;
     }
+
     /*インタビュー*/
     .interview {
-
         -webkit-clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
         clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
     }
@@ -1118,6 +1134,7 @@ h2:before {
     .sns-fb {
         margin-top: 10px;
     }
+
     .sns h2:before {
         top: 110px;
     }

@@ -4,24 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>【大学生対象】中高生を導くITリーダー創造インターンシッププログラム</title>
-    <!-- drawer.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <!-- jquery & iScroll -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-    <!-- drawer.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
-    <link href="js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
-    <link href="js/slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+   
 
     <link rel="stylesheet" href="/css/style.css">
+    
     <link rel="icon" href="/images/favicon.ico">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- ビューポートの設定 -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- drawer.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+<!-- jquery & iScroll -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<!-- drawer.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 </head>
 
 <body>
@@ -419,7 +416,38 @@
     </section>
     <!--        フッター-->
     <footer>© 2010 - 2019 Life is Tech, Inc.</footer>
+    
+<!--ハンバーガーメニュー-->
+   <body class="drawer drawer--top">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li><a class="drawer-brand" href="#about">About</a></li>
+        <li><a class="drawer-brand" href="#about">About</a></li>
+        <li><a class="drawer-brand" href="#about">About</a></li>
+        <li><a class="drawer-brand" href="#about">About</a></li>
+        <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+        <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main">
+    <!-- Page content -->
+  </main>
+</body>
+   <script>
+      $(document).ready(function() {
+    $('.drawer').drawer();
+    $('.drawer-nav').on('click', function() {
+        $('.drawer').drawer('close');
+    });
+});
 
+    </script>
     <!--ボタンがheaderでは見えないようにする-->
     <script>
         let target = document.querySelectorAll("#header"),
