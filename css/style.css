@@ -7,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-/*    box-sizing: border-box;*/
+    /*    box-sizing: border-box;*/
 }
 
 body {
@@ -22,30 +22,28 @@ body {
 /*文字色*/
 h2 {
     font-size: 37px;
-/*    border-bottom: 3px solid #EE1F79;*/
     display: inline-block;
     margin-bottom: 1em;
     padding-bottom: 25px;
 }
 
 h2:before {
-  content: '';
-  position: absolute;
-  left: 200px;
-  top: 170px;/*線の上下位置*/
-  display: inline-block;
-  width: 40px;/*線の長さ*/
-  height: 2px;/*線の太さ*/
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);/*位置調整*/
-  background-color: #EE1F79;/*線の色*/
-  border-radius: 2px;/*線の丸み*/
+    content: '';
+    position: absolute;
+    left: 200px;
+    top: 170px;
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #EE1F79;
+    border-radius: 2px;
     z-index: 10;
 }
 
 h3 {
     font-size: 23px;
-/*    font-family: "Yu Gothic";*/
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -55,30 +53,31 @@ h3 {
 #header {
     height: 100vh;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     background-image: url(../images/mainA_bg2.png), url(../images/slide1.jpg);
-    background-repeat: no-repeat, no-repeat; 
+    background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-color: #151e43;
-    
+
 }
-.header::before{
-  content:"";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 140px 100vw ;
+
+.header::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 140px 100vw;
     transform: rotate(180deg);
-  border-color: transparent  transparent  transparent #151e43;
+    border-color: transparent transparent transparent #151e43;
 }
 
 .header-contents {
     margin: 100px 180px 80px 150px;
     position: relative;
-     overflow:visible;
+    overflow: visible;
 }
 
 .header-contents .logo {
@@ -93,7 +92,7 @@ h3 {
     color: #fff;
     font-size: 20px;
     background-color: #000;
-font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     font-weight: 500;
     padding: 3px;
 }
@@ -101,7 +100,7 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "�
 .support {
     color: #fff;
     font-size: 14px;
-font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     margin: 5px;
 }
 
@@ -116,7 +115,7 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "�
     position: absolute;
     z-index: 50;
     float: left;
-   
+
 }
 
 .arrow {
@@ -134,7 +133,6 @@ nav {
     background-color: rgb(21, 30, 67, 0.7);
     width: 100%;
     height: 60px;
-    /*    display: block;*/
     position: fixed;
     font-family: "Futura-Med";
     font-weight: 100;
@@ -151,8 +149,6 @@ nav ul {
 }
 
 nav li {
-    /*    display: inline-block;*/
-    /*    list-style-type: none;*/
     margin-right: 45px;
     position: relative;
 }
@@ -230,12 +226,15 @@ nav img {
 .about-detail {
     margin: 50px 180px 80px 180px;
 }
+
 .about h2:before {
-  top: 140px;
+    top: 140px;
 }
-.about .left-box p{
+
+.about .left-box p {
     font-size: 15px;
 }
+
 .box-detail {
     display: flex;
 }
@@ -273,7 +272,7 @@ nav img {
 }
 
 .program h2:before {
-  top: 140px;
+    top: 140px;
 }
 
 .program-box h4 {
@@ -301,7 +300,9 @@ nav img {
 .yellow-detail {
     margin: 0px 180px 0px 180px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .program-yellow img {
@@ -311,23 +312,28 @@ nav img {
 }
 
 .program-box {
-    margin: 0 auto;
     width: 286px;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding: 10px 5px;
+    margin: 5px;
 }
 
 .program-box figure {
     background-color: #fff;
     width: 286px;
-    height: 200px;
+    height: 410px;
+    margin: 0 auto;
 }
 
 .program-box p {
     line-height: 25px;
     padding: 15px;
     margin: 0 auto;
+}
+
+.margin-bottom {
+    margin-bottom: 80px;
 }
 
 /*コース紹介*/
@@ -520,7 +526,7 @@ nav img {
 }
 
 .interview h2:before {
-  top: 270px;
+    top: 270px;
 }
 
 /*join*/
@@ -541,17 +547,20 @@ nav img {
     margin: 80px 180px 80px 180px;
     text-align: center;
 }
+
 .join h2:before {
-  left: 50%;
+    left: 50%;
 }
+
 .join-detail h3 {
     margin-top: 40px;
     margin-bottom: 35px;
 }
 
-.smalltext{
+.smalltext {
     font-size: 12px;
 }
+
 .join-box {
     width: 80%;
     overflow: hidden;
@@ -563,30 +572,30 @@ nav img {
     font-size: 15px;
     font-weight: 200;
     display: inline-block;
-     padding: 25px;
+    padding: 25px;
 }
 
-.table-left{
-    width:200px;
+.table-left {
+    width: 200px;
     font-weight: 600;
     vertical-align: top;
 }
 
-table{
+table {
     border-collapse: collapse;
 }
 
-table tr{
-       border-color: #fff;
-        border-bottom: dotted;
-        border-width: 0.7px;
+table tr {
+    border-color: #fff;
+    border-bottom: dotted;
+    border-width: 0.7px;
 }
 
 table tr:last-of-type {
-  border: none;
+    border: none;
 }
 
-table td{
+table td {
     padding: 12px;
 }
 
@@ -597,6 +606,7 @@ table td{
 .table-a {
     color: #ed1e79;
 }
+
 .join-title {
     font-weight: 600;
     margin: 3px 0px;
@@ -614,15 +624,16 @@ table td{
     vertical-align: center;
     align-items: center;
 }
-.join-a p{
+
+.join-a p {
     font-size: 15px;
     color: white;
 }
 
 .join-a a {
-    
+
     background-color: #EE1F79;
-   font-size: 90px;
+    font-size: 90px;
     padding: 50px;
     text-decoration: none;
     border-radius: 70px;
@@ -658,7 +669,7 @@ table td{
 }
 
 .sns h2:before {
-  left: 50%;
+    left: 50%;
 }
 
 .sns-detail img {
@@ -715,5 +726,160 @@ footer {
 }
 
 /*fuwat*/
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
 
-/*レスポンシブ*/
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/*レスポンシブスマホ*/
+@media screen and (max-width: 1500px) {
+    .drawer-nav {
+        opacity: 0;
+    }
+
+    .drawer-toggle {
+        opacity: 0;
+    }
+
+}
+
+@media screen and (max-width : 480px) {
+    .body {
+        font-family: sans-serif;
+    }
+
+    .pc-only {
+        opacity: 0;
+    }
+
+    /*文字色*/
+    h2 {
+        font-size: 25px;
+        display: inline-block;
+        margin-bottom: 1em;
+        padding-bottom: 25px;
+    }
+
+    h2:before {
+        left: 15px;
+        top: 40px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    /*    ハンバーガーメニュー*/
+    .drawer-nav {
+        opacity: 1;
+    }
+
+    .drawer-toggle {
+        opacity: 1;
+    }
+
+    /*    ヘッダー*/
+    #header {
+        height: 80vh;
+    }
+
+    .header-contents {
+        margin: 80px 10px 10px 10px;
+    }
+
+    .header-contents .logo {
+        width: 95%;
+        align-content: center;
+    }
+
+    .highlight span {
+        font-size: 10px;
+    }
+
+    .header-contents .list {
+        width: 200px;
+    }
+
+    nav {
+        background-color: #000;
+        height: 50px;
+    }
+
+    .home {
+        margin: 15px;
+    }
+
+    .home img {
+        width: 200px;
+        vertical-align: center;
+    }
+
+    /*    アバウト*/
+    .about {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    }
+
+    .about-detail {
+        margin: 30px 15px 30px 15px;
+    }
+.about h2:before {
+    top: 100px;
+    left: 15px;
+}
+    .about .left-box p {
+        font-size: 13px;
+    }
+
+    .left-box {
+        width: 100%;
+    }
+
+    .right-box iframe {
+        width: 370px;
+        height: 210px;
+        align-content: center;
+    }
+
+    .box-detail {
+        flex-direction: column;
+    }
+}
