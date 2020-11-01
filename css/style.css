@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+/*    box-sizing: border-box;*/
 }
 
 body {
@@ -21,14 +22,30 @@ body {
 /*文字色*/
 h2 {
     font-size: 37px;
-    font-family: "Yu Gothic";
-    border-bottom: 3px solid #EE1F79;
+/*    border-bottom: 3px solid #EE1F79;*/
+    display: inline-block;
+    margin-bottom: 1em;
     padding-bottom: 25px;
+}
+
+h2:before {
+  content: '';
+  position: absolute;
+  left: 200px;
+  top: 170px;/*線の上下位置*/
+  display: inline-block;
+  width: 40px;/*線の長さ*/
+  height: 2px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: #EE1F79;/*線の色*/
+  border-radius: 2px;/*線の丸み*/
+    z-index: 10;
 }
 
 h3 {
     font-size: 23px;
-    font-family: "Yu Gothic";
+/*    font-family: "Yu Gothic";*/
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -38,73 +55,106 @@ h3 {
 #header {
     height: 100vh;
     position: relative;
-    overflow: hidden;
+    overflow:hidden;
     background-image: url(../images/mainA_bg2.png), url(../images/slide1.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: center center;
+    background-repeat: no-repeat, no-repeat; 
     background-size: cover;
+    background-color: #151e43;
+    
+}
+.header::before{
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 140px 100vw ;
+    transform: rotate(180deg);
+  border-color: transparent  transparent  transparent #151e43;
 }
 
-.header-contents{
+.header-contents {
     margin: 100px 180px 80px 150px;
     position: relative;
+     overflow:visible;
 }
 
-.header-contents .logo{
+.header-contents .logo {
     width: 530px;
 }
 
-.header-contents .list{
+.header-contents .list {
     width: 425px;
 }
+
 .highlight span {
     color: #fff;
     font-size: 20px;
     background-color: #000;
-    font-family: "Yu Gothic";
+font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-weight: 500;
     padding: 3px;
 }
 
-.support  {
+.support {
     color: #fff;
     font-size: 14px;
-    font-family: "Yu Gothic";
+font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     margin: 5px;
 }
-.right-dots{
+
+.right-dots {
     position: absolute;
 }
-.dots{
-top: -570px;
-  left: 800px;
+
+.dots {
+    top: -570px;
+    left: 800px;
     width: 300px;
-     position: absolute;
+    position: absolute;
     z-index: 50;
+    float: left;
+   
 }
-.arrow{
-  top: -250px;
-  left: 800px;
+
+.arrow {
+    top: -90px;
+    left: 800px;
     width: 30px;
-     position: absolute;
+    position: absolute;
     z-index: 50;
+    float: left;
 }
+
 /*メニューバー*/
 nav {
     overflow: hidden;
     background-color: rgb(21, 30, 67, 0.7);
     width: 100%;
     height: 60px;
-    display: block;
+    /*    display: block;*/
     position: fixed;
     font-family: "Futura-Med";
-    text-align: right;
+    font-weight: 100;
     z-index: 100;
 }
 
+nav ul {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 nav li {
-    display: inline-block;
-    list-style-type: none;
-    padding-right: 45px;
+    /*    display: inline-block;*/
+    /*    list-style-type: none;*/
+    margin-right: 45px;
+    position: relative;
 }
 
 nav li:first-child {
@@ -112,7 +162,7 @@ nav li:first-child {
 }
 
 nav a {
-    font-size: 17px;
+    font-size: 18px;
     display: block;
     text-decoration: none;
     color: #fff;
@@ -126,6 +176,37 @@ nav a:hover {
 
 nav img {
     width: 290px;
+}
+
+.home {
+    text-align: right;
+    align-content: right;
+    margin-right: 250px;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.pink-nav {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    width: 100px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pink-nav::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    background: #ed1e79;
+    transform: skewX(-30deg);
+    z-index: -1
 }
 
 /*about*/
@@ -142,14 +223,19 @@ nav img {
 }
 
 .about {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);  
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .about-detail {
-    margin: 80px 180px 80px 180px;
+    margin: 50px 180px 80px 180px;
 }
-
+.about h2:before {
+  top: 140px;
+}
+.about .left-box p{
+    font-size: 15px;
+}
 .box-detail {
     display: flex;
 }
@@ -186,6 +272,10 @@ nav img {
     display: flex;
 }
 
+.program h2:before {
+  top: 140px;
+}
+
 .program-box h4 {
     color: #141d42;
     font-size: 19px;
@@ -209,7 +299,7 @@ nav img {
 }
 
 .yellow-detail {
-    margin: 80px 180px 80px 180px;
+    margin: 0px 180px 0px 180px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -225,6 +315,7 @@ nav img {
     width: 286px;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 }
 
 .program-box figure {
@@ -288,10 +379,11 @@ nav img {
     margin-top: 50px;
 }
 
-.mentor-title{
+.mentor-title {
     text-align: center;
 }
-.mentor-title p{
+
+.mentor-title p {
     color: #fff;
     background-color: #28ABE1;
     font-size: 27px;
@@ -299,7 +391,7 @@ nav img {
     height: 60px;
     margin-top: 40px;
     margin-bottom: 40px;
-     display: inline-block;
+    display: inline-block;
     line-height: 60px;
 }
 
@@ -378,19 +470,21 @@ nav img {
 
 .interview {
     margin: 0 auto;
-    background-color:  #4D4D4D;
- 
-  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    background-color: #4D4D4D;
+
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
-.interview-detail{
+
+.interview-detail {
     margin: 180px 180px 80px 180px;
 }
 
-.mentor-now{
+.mentor-now {
     margin-bottom: 100px;
 }
-.mentor-past{
+
+.mentor-past {
     margin-bottom: 100px;
 }
 
@@ -404,6 +498,7 @@ nav img {
     width: 120px;
     margin: 12px;
 }
+
 .pic-detail2 {
     display: flex;
     flex-wrap: wrap;
@@ -424,6 +519,10 @@ nav img {
     font-size: 14px;
 }
 
+.interview h2:before {
+  top: 270px;
+}
+
 /*join*/
 #join {
     margin: 0 auto;
@@ -438,57 +537,93 @@ nav img {
     text-align: center;
 }
 
-.join-detail{
+.join-detail {
     margin: 80px 180px 80px 180px;
     text-align: center;
 }
-
-.join-detail h3{
-    margin-top: 70px;
+.join h2:before {
+  left: 50%;
+}
+.join-detail h3 {
+    margin-top: 40px;
     margin-bottom: 35px;
 }
+
+.smalltext{
+    font-size: 12px;
+}
 .join-box {
-    width: 60%;
+    width: 80%;
     overflow: hidden;
     background-color: #fff;
     background-size: cover;
     color: #000;
     border-radius: 10px;
     text-align: left;
-    font-size: 14px;
-     display: inline-block;
+    font-size: 15px;
+    font-weight: 200;
+    display: inline-block;
+     padding: 25px;
+}
+
+.table-left{
+    width:200px;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table tr{
+       border-color: #fff;
+        border-bottom: dotted;
+        border-width: 0.7px;
+}
+
+table tr:last-of-type {
+  border: none;
+}
+
+table td{
+    padding: 12px;
 }
 
 .join-box ul {
     list-style: none;
 }
 
-.join-title{
-    たぶんboldにする
+.table-a {
+    color: #ed1e79;
+}
+.join-title {
+    font-weight: 600;
+    margin: 3px 0px;
 }
 
-.join-a{
+.join-a {
     margin-top: 50px;
     margin-bottom: 150px;
-     position: relative;
+    position: relative;
 }
-.join-a img{
+
+.join-a img {
     width: 200px;
     height: 80px;
-    position: relative;
-    padding-top: 20px;
-     position: relative;
+    vertical-align: center;
+    align-items: center;
+}
+.join-a p{
+    font-size: 15px;
+    color: white;
 }
 
 .join-a a {
-    font-size: 15px;
+    
     background-color: #EE1F79;
-    color: white;
-/*
-    margin-top: 20px;
-    margin-bottom: 20px;
-*/
-    padding: 60px 60px;
+   font-size: 90px;
+    padding: 50px;
     text-decoration: none;
     border-radius: 70px;
     position: relative;
@@ -522,6 +657,10 @@ nav img {
     color: #EE1F79;
 }
 
+.sns h2:before {
+  left: 50%;
+}
+
 .sns-detail img {
     width: 100px;
     height: 100px;
@@ -534,6 +673,33 @@ nav img {
 
 .sns-ig {
     margin-top: 30px;
+}
+
+#top {
+    transition: all 0.5s;
+}
+
+#top .top-button {
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #EE1F79;
+    text-align: center;
+    line-height: 80px;
+    position: fixed;
+    top: 60%;
+    left: 90%;
+}
+
+.button img {
+    position: fixed;
+    top: 80%;
+    left: 91.6%;
 }
 
 /*フッター*/

@@ -4,9 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <title>【大学生対象】中高生を導くITリーダー創造インターンシッププログラム</title>
+     <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
     <link rel="stylesheet" href="/css/style.css">
-
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <link href="js/slick-1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="js/slick-1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/images/favicon.ico">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 
 <body>
@@ -15,11 +28,12 @@
         <div class="menu-bar">
             <nav>
                 <ul>
-                    <li><a class="home-button" href="index.html"><img src="/images/header_top-logo.png"></a></li>
+                    <li class="home"><a class="home-button" href="index.html"><img src="/images/header_top-logo.png"></a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#program">Program</a></li>
                     <li><a href="#interview">Interview</a></li>
                     <li><a href="#schedule">Schedule</a></li>
+                    <li class="pink-nav">12期生募集</li>
                 </ul>
             </nav>
         </div>
@@ -221,6 +235,7 @@
                         <p>藤井陽介</p><br>
                         <p>東京大学大学院</p>
                     </div>
+                    
                     <div class="interview-pic">
                         <img src="images/sample.png">
                         <p>河村和紀</p><br>
@@ -314,10 +329,10 @@
             <h2>Join</h2>
             <h3>下記エントリーフォームより<br>ご応募ください！</h3>
             <div class="join-box">
-                <table border="1">
+                <table>
                     <tr>
-                        <td>実施コース</td>
-                        <td>
+                        <td class="table-left"><i class="fas fa-angle-double-right"></i>実施コース</td>
+                        <td class="table-right">
                             <ul>
                                 <li>iPhoneアプリ プログラミングコース</li>
                                 <li>Androidアプリ プログラミングコース</li>
@@ -333,16 +348,16 @@
                                 <li>初音ミク V3コース</li>
                                 <li>Minecraft プログラミングコース</li>
                             </ul>
-                            <p>※メンター合格後に他コースの技術研修に参加することもできます。</p>
+                            <p class="smalltext">※メンター合格後に他コースの技術研修に参加することもできます。</p>
                         </td>
                     </tr>
                     <tr>
-                        <td>募集人数</td>
-                        <td>各コース5〜15名</td>
+                        <td class="table-left"><i class="fas fa-angle-double-right"></i>募集人数</td>
+                        <td class="table-right">各コース5〜15名</td>
                     </tr>
                     <tr>
-                        <td>応募条件</td>
-                        <td>
+                        <td class="table-left"><i class="fas fa-angle-double-right"></i>応募条件</td>
+                        <td class="table-right">
                             <p class="join-title">1. 大学生/大学院生/専門学生/高等専門学校生</p>
                             ※大学・専門学校1年生や大学院生も応募可能です。<br>
                             ※高専生の場合、現在3年生（2020年4月からは4年生）以上の方は応募可能です。<br>
@@ -351,7 +366,7 @@
                             ※どの属性、どの学年であっても同じ基準で選考させて頂きます。
                             <br>
                             <p class="join-title">2. ご自分のパソコンを持参いただける方</p>
-                            コースにより対応できるPCの種類やスペックが異なります。<br>詳しくは<a href="https://life-is-tech.com/pc-setting/" target="_blank">こちら</a>をご覧ください。<br>
+                            コースにより対応できるPCの種類やスペックが異なります。<br>詳しくは<a class="table-a" href="https://life-is-tech.com/pc-setting/" target="_blank">こちら</a>をご覧ください。<br>
                             <p class="join-title">3. 持ち物</p>
                             <ul>
                                 <li>・履歴書（顔写真つき）</li>
@@ -365,7 +380,10 @@
                 </table>
             </div>
             <div class="join-a">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9FaHXx5b1dX4_73ZSZno6yO2gYWNY8ubRGm9TMzConP1ngw/closedform"><img src="/images/joinus.svg">12期生募集</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe9FaHXx5b1dX4_73ZSZno6yO2gYWNY8ubRGm9TMzConP1ngw/closedform">
+                <img src="/images/joinus.svg">
+                <p>12期生募集</p>          
+                </a>
             </div>
         </div>
     </section>
@@ -389,8 +407,55 @@
         </div>
     </section>
 
+<!--  TOPボタン-->
+   <section class="button" id="top">
+       <a class="top-button" href="https://docs.google.com/forms/d/e/1FAIpQLSe9FaHXx5b1dX4_73ZSZno6yO2gYWNY8ubRGm9TMzConP1ngw/closedform">12期生募集</a>
+       <img src="images/btn_totop.png" alt="">
+   </section>
     <!--        フッター-->
     <footer>© 2010 - 2019 Life is Tech, Inc.</footer>
+
+ <script>
+        let target = document.querySelectorAll("#header"),
+            options = {
+                threshold: 0.8
+            },
+            observer = new IntersectionObserver(
+                function(e) {
+                    e.forEach(
+                        function(e) {
+                            if (e.isIntersecting) {
+                                $("#top").css("opacity", "0");
+                            }
+                        }
+                    )
+                }, options
+            );
+        target.forEach(function(e) {
+            observer.observe(e);
+        });;
+
+
+        let target2 = document.querySelectorAll("#about"),
+            options2 = {
+                threshold: 0.5
+            },
+            observer2 = new IntersectionObserver(
+                function(e) {
+                    e.forEach(
+                        function(e) {
+                            if (e.isIntersecting) {
+                                $("#top").css("opacity", "1");
+                            }
+                        }
+                    )
+                }, options2
+            );
+        target2.forEach(function(e) {
+            observer2.observe(e);
+        });;
+
+    </script>
 
 </body>
 
