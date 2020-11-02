@@ -1300,8 +1300,8 @@ footer {
     }
 
     .example-box span {
-    font-size: 12px;
-    padding: 10px;
+    font-size: 8px;
+    padding: 8px;
     margin-left: 25px;
 }
 
@@ -1374,9 +1374,18 @@ footer {
     .mentor-past p {
         font-size: 13px;
     }
-
+.photo-hover2 {
+	width:			135px;
+	height:			135px;
+}
+.photo-hover2 .mask {
+	width:			89%;
+	height:			89%;
+    border-radius: 50%;
+    margin: 10px;
+}
     .company-interview p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .pic-detail {
@@ -1384,7 +1393,7 @@ footer {
     }
 
     .pic-detail2 {
-        margin: 25px;
+        margin: 20px;
     }
 
     .pic-detail2 img {
@@ -1513,5 +1522,26 @@ footer {
     .sns h2:before {
         top: 110px;
     }
+    
+#top .top-button {
+    font-size: 12px;
+    padding: 10px;
+    vertical-align: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #EE1F79;
+    text-align: center;
+    line-height: 70px;
+    position: fixed;
+    top: 72%;
+    left: 70%;
+}
 
+.button img {
+    position: fixed;
+    width: 50px;
+    top: 85%;
+    left: 75%;
+}
 }
