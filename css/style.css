@@ -208,7 +208,7 @@ h3 {
 #nav-close {
     display: none;
     position: fixed;
-    z-index: 99;
+    z-index: 120;
     top: 0;
     left: 0;
     width: 100%;
@@ -1220,7 +1220,11 @@ footer {
         transform: rotate(180deg);
         border-color: transparent transparent transparent #151e43;
     }
-
+.header-detail {
+    margin-top: 10px;
+    margin-right: 3%;
+    margin-left: 3%;
+}
     .header-contents {
         margin: 80px 10px 10px 10px;
     }
