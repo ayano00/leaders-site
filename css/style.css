@@ -92,7 +92,6 @@ h3 {
     color: #fff;
     font-size: 20px;
     background-color: #000;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     font-weight: 500;
     padding: 3px;
 }
@@ -100,7 +99,6 @@ h3 {
 .support {
     color: #fff;
     font-size: 14px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     margin: 5px;
 }
 
@@ -517,10 +515,7 @@ nav img {
 .interview-pic p {
     text-align: center;
     font-size: 14px;
-}
-
-.interview-small {
-    font-size: 12px;
+    margin: 0 auto;
 }
 
 .square-pic p {
@@ -530,6 +525,116 @@ nav img {
 
 .interview h2:before {
     top: 270px;
+}
+
+/* ポップアップウインドウの設定 */
+.popup {
+  background-color: #fff;
+    border: 2px solid #ed1e79;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 65vw;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+/* チェックボックスの初期設定 */
+#popup-on1{
+  display: none;
+}
+/* チェックされたらポップアップウインドウを開く */
+#popup-on1:checked + .popup{
+  display: block;
+}
+#popup-on2{
+  display: none;
+}
+#popup-on2:checked + .popup{
+  display: block;
+}
+#popup-on3{
+  display: none;
+}
+#popup-on3:checked + .popup{
+  display: block;
+}
+#popup-on4{
+  display: none;
+}
+#popup-on4:checked + .popup{
+  display: block;
+}
+#popup-on5{
+  display: none;
+}
+#popup-on5:checked + .popup{
+  display: block;
+}
+#popup-on6{
+  display: none;
+}
+#popup-on6:checked + .popup{
+  display: block;
+}
+/* 閉じるアイコン（右上） */
+.icon-close{
+  background: #fff;
+  color: #000;
+  font-size: 30px;
+  padding: 0 10px;
+  position: absolute;
+  top: -50;
+    right: 0;
+}
+
+/* 開くボタン */
+.btn-open{
+  cursor: pointer;
+  text-align: center;
+    font-size: 14px;
+}
+.popup-content table {
+    border-collapse: collapse;
+}
+.popup-content h2{
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+     text-align: left;
+    align-content: center;
+}
+.popup-content h2:before {
+    top: 90px;
+    left: 270px;
+}
+.popup-content .table-right p{
+   font-size: 14px;
+    color: #000;
+    text-align: left;
+}
+.popup-content table td {
+    padding: 12px;
+}
+.popup-content .table-left{
+    align-content: center;
+    vertical-align: center;
+    width: 180px;
+}
+.popup-content .table-left p{
+     text-align: center;
+    font-size: 15px;
+    color: #000;
+}
+/* ポップアップの内容 */
+.popup-content{
+  margin: 20px;
+     text-align: center;
 }
 
 /*join*/
@@ -578,27 +683,27 @@ nav img {
     padding: 25px;
 }
 
-.table-left {
+.join .table-left {
     width: 200px;
     font-weight: 600;
     vertical-align: top;
 }
 
-table {
+.join table {
     border-collapse: collapse;
 }
 
-table tr {
+.join table tr {
     border-color: #fff;
     border-bottom: dotted;
     border-width: 0.7px;
 }
 
-table tr:last-of-type {
+.join table tr:last-of-type {
     border: none;
 }
 
-table td {
+.join table td {
     padding: 12px;
 }
 
@@ -732,6 +837,7 @@ footer {
 }
 
 /*ハンバーガーメニュー*/
+/*
 .drawer{
     z-index: 600;
 }
@@ -741,6 +847,8 @@ footer {
 .drawer-hamburger-icon:before {
     background-color: #fff;
 }
+*/
+
 /*fuwat*/
 .fuwatAnime {
     -webkit-animation-fill-mode: both;
@@ -815,7 +923,7 @@ footer {
     }
 
     h2:before {
-        left: 30px;
+        left: 40px;
         top: 40px;
         display: inline-block;
     }
@@ -839,9 +947,13 @@ footer {
 
     /*    ヘッダー*/
     #header {
-        height: 80vh;
+        height: 75vh;
     }
-
+.header::before {
+    border-width: 0 0 100px 100vw;
+    transform: rotate(180deg);
+    border-color: transparent transparent transparent #151e43;
+}
     .header-contents {
         margin: 80px 10px 10px 10px;
     }
@@ -853,6 +965,10 @@ footer {
 
     .highlight span {
         font-size: 12px;
+    padding: 2px;
+        line-height: 10px;
+}
+
     }
 
     .header-contents .list {
@@ -1042,6 +1158,7 @@ footer {
 
     .mentor-past {
         margin-bottom: 50px;
+        justify-content: center;
     }
 
     .mentor-past p {
@@ -1068,10 +1185,6 @@ footer {
         font-size: 12px;
     }
 
-    .interview-small p {
-        font-size: 9px;
-    }
-
     .square-pic p {
         font-size: 12px;
     }
@@ -1079,6 +1192,48 @@ footer {
     .interview h2:before {
         top: 150px;
     }
+.popup {
+  width: 95vw;
+  height: 90vh;
+}
+.popup-content h2{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.popup-content h2:before {
+    top: 280px;
+    left: 50%;
+}
+.popup-content .table-right p{
+   font-size: 12px;
+}
+.popup-content table td {
+    border-color: #000;
+    border-bottom: dotted;
+    border-width: 0.7px;
+}
+
+.join table tr:last-of-type {
+    border: none;
+}
+.popup-content table td {
+    padding: 5px;
+     display: block;
+    width: 95%:
+}
+.popup-content .table-left{
+    align-content: center;
+    vertical-align: center;
+    width: 100%;
+}
+.popup-content .table-left p{
+    font-size: 10px;
+}
+/* ポップアップの内容 */
+.popup-content{
+  margin: 10px;
+     text-align: center;
+}
 
     /*join*/
     #join {
@@ -1109,7 +1264,7 @@ footer {
         padding: 5px;
     }
 
-    table td {
+    .join table td {
         padding: 10px;
         display: block;
         width: 95%;
