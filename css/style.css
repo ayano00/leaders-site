@@ -70,7 +70,7 @@ h3 {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 140px 100%;
+    border-width: 0 0 140px 100vw;
     transform: rotate(180deg);
     border-color: transparent transparent transparent #151e43;
 }
@@ -1216,7 +1216,7 @@ footer {
     }
 
     .header::before {
-        border-width: 0 0 100px 100%;
+        border-width: 0 0 100px 100vw;
         transform: rotate(180deg);
         border-color: transparent transparent transparent #151e43;
     }
