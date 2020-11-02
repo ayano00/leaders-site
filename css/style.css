@@ -113,7 +113,6 @@ h3 {
     position: absolute;
     z-index: 50;
     float: left;
-
 }
 
 .arrow {
@@ -124,6 +123,28 @@ h3 {
     z-index: 50;
     float: left;
 }
+
+#slanting01{ 
+/*
+    width:30%; 
+    height:100px; 
+*/
+    margin:0 auto; 
+    text-align:center; 
+    transform:skewX(-15deg);
+}
+
+.phone-only{
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ed1e79;
+    padding: 5px 10px;
+     position: relative;
+    top: -600px;
+    left: 300px;
+}
+
 
 /*メニューバー*/
 nav {
@@ -494,6 +515,7 @@ nav img {
 .pic-detail {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 25px;
 }
 
@@ -501,10 +523,70 @@ nav img {
     width: 120px;
     margin: 12px;
 }
+.photo-hover {
+	width:			135px;
+	height:			135px;
+	overflow:		hidden;
+	position:		relative;	
+}
+.photo-hover .caption {
+/*	font-size:		130%;*/
+	text-align: 		center;
+	padding-top:		70px;
+	color:			#fff;
+}
+.photo-hover .mask {
+	width:			89%;
+	height:			89%;
+    border-radius: 50%;
+    background-position: center ;
+	position:		absolute;	
+	top:			0;
+	left:			0;
+    margin: 12px;
+	opacity:		0;	
+	background-color:	rgba(0,0,0,0.4);	
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.photo-hover:hover .mask {
+	opacity:		1;	
+}
+
+.photo-hover2 {
+	width:			150px;
+	height:			150px;
+	overflow:		hidden;
+	position:		relative;	
+}
+.photo-hover2 .caption {
+/*	font-size:		130%;*/
+	text-align: 		center;
+	padding-top:		70px;
+	color:			#fff;
+}
+.photo-hover2 .mask {
+	width:			80%;
+	height:			80%;
+    border-radius: 50%;
+    background-position: center ;
+	position:		absolute;	
+	top:			0;
+	left:			0;
+    margin: 23px;
+	opacity:		0;	
+	background-color:	rgba(0,0,0,0.4);	
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.photo-hover2:hover .mask {
+	opacity:		1;	
+}
 
 .pic-detail2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 40px;
 }
 
@@ -542,6 +624,7 @@ nav img {
     width: 65vw;
     height: 80vh;
     overflow-y: scroll;
+    z-index: 1000;
 }
 
 /* チェックボックスの初期設定 */
@@ -594,7 +677,6 @@ nav img {
     display: block;
 }
 
-/* 閉じるアイコン（右上） */
 .icon-close {
     background: #fff;
     color: #000;
@@ -605,7 +687,6 @@ nav img {
     right: 0;
 }
 
-/* 開くボタン */
 .btn-open {
     cursor: pointer;
     text-align: center;
@@ -616,7 +697,9 @@ nav img {
     border-collapse: collapse;
 }
 
-.popup-content h2 {
+h5 {
+    margin-bottom: 1em;
+    padding-bottom: 25px;
     color: #000;
     font-weight: 600;
     font-size: 20px;
@@ -624,9 +707,19 @@ nav img {
     align-content: center;
 }
 
-.popup-content h2:before {
+h5:before {
+    content: '';
+    position: absolute;
+    left: 260px;
     top: 90px;
-    left: 270px;
+    display: inline-block;
+    width: 40px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #EE1F79;
+    border-radius: 2px;
+    z-index: 10;
 }
 
 .popup-content .table-right p {
@@ -651,7 +744,6 @@ nav img {
     color: #000;
 }
 
-/* ポップアップの内容 */
 .popup-content {
     margin: 20px;
     text-align: center;
@@ -922,6 +1014,10 @@ footer {
         opacity: 0;
     }
 */
+    .phone-only{
+        opacity: 0;
+        display: none;
+    }
 
 }
 
@@ -929,7 +1025,11 @@ footer {
     .body {
         font-family: sans-serif;
     }
-
+.phone-only{
+        opacity: 1;
+    display: block;
+    }
+    
     .pc-only {
         opacity: 0;
     }
@@ -1219,12 +1319,12 @@ footer {
         height: 85vh;
     }
 
-    .popup-content h2 {
+    .popup-content h5 {
         font-size: 16px;
         margin-top: 10px;
     }
 
-    .popup-content h2:before {
+    .popup-content h5:before {
         top: 270px;
         left: 50%;
     }
