@@ -208,7 +208,7 @@ h3 {
 #nav-close {
     display: none;
     position: fixed;
-    z-index: 120;
+    z-index: 9000;
     top: 0;
     left: 0;
     width: 100%;
