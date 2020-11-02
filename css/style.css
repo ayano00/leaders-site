@@ -248,6 +248,7 @@ h3 {
     display: block;
     /*カバーを表示*/
     opacity: .5;
+    z-index: 9000;
 }
 
 #nav-input:checked ~ #nav-content {
