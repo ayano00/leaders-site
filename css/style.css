@@ -489,10 +489,7 @@ nav img {
 }
 
 .courses-detail {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-right: 13%;
-    margin-left: 13%;
+    margin: 80px 180px 80px 150px;
 }
 
 .all-courses img {
@@ -628,10 +625,7 @@ nav img {
 }
 
 .interview-detail {
-    margin-top: 180px;
-    margin-bottom: 80px;
-    margin-right: 13%;
-    margin-left: 13%;
+    margin: 180px 180px 80px 150px;
 }
 
 .mentor-now {
