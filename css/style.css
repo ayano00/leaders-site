@@ -1111,8 +1111,10 @@ footer {
     }
 
     .example-box span {
-        font-size: 12px;
-    }
+    font-size: 12px;
+    padding: 10px;
+    margin-left: 25px;
+}
 
     .example-box iframe {
         width: 340px;
@@ -1209,7 +1211,7 @@ footer {
     }
 
     .interview h2:before {
-        top: 150px;
+        top: 145px;
     }
 
     .popup {
