@@ -430,7 +430,7 @@ nav img {
     width: 360px;
     height: 250px;
     margin-top: 25px;
-    margin-left: 25px;
+/*    margin-left: 25px;*/
 }
 
 .program-yellow {
@@ -1168,6 +1168,7 @@ footer {
 @media screen and (max-width : 480px) {
     .body {
         font-family: sans-serif;
+        z-index: -1;
     }
 
     .phone-only {
@@ -1319,6 +1320,8 @@ footer {
     .program .right-box img {
         width: 300px;
         height: 200px;
+        margin-right:none;
+        align-content: center;
     }
 
     .yellow-detail {
