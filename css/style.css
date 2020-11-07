@@ -279,7 +279,7 @@ nav img {
 #nav-content {
     overflow: auto;
     position: fixed;
-    top: 50px;
+    top: 15px;
     left: 0;
     z-index: 1200;
     width: 100%;
@@ -292,8 +292,8 @@ nav img {
 
 #nav-content li {
     list-style-type: none;
-    font-size: 17px;
-    margin: 15px;
+    font-size: 20px;
+    margin: 13px;
     text-align: center;
     vertical-align: center;
     border-bottom: 0.1px solid #fff;
@@ -305,11 +305,19 @@ nav img {
     /*カバーを表示*/
     opacity: .5;
 }
-
+#nav-content li:last-child{
+    border-bottom: none;
+}
 #nav-input:checked ~ #nav-content {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
     box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+}
+
+#nav-content p{
+    text-align: right;
+    font-size: 30px;
+    margin-right: 25px;
 }
 /*about*/
 #about {
