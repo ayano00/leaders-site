@@ -12,7 +12,7 @@
 
 body {
     width: 100%;
-    position: relative;
+/*    position: relative;*/
     color: #333;
     margin: 0 auto;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
@@ -301,8 +301,8 @@ nav img {
     height: 20% ;
     color: white;
     background: rgb(0, 0, 0, 0.5);
-    transition: .4s ease-in-out;/ -webkit-transform: translateY(-130%);
-    transform: translateY(-130%);
+    transition: .4s ease-in-out;/ -webkit-transform: translateY(-140%);
+    transform: translateY(-140%);
 }
 
 #nav-content li {
@@ -1058,7 +1058,7 @@ h5:before {
     left: 90%;
 }
 
-.button img {
+#top .top-button2 {
     position: fixed;
     top: 80%;
     left: 91.6%;
