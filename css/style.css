@@ -68,7 +68,7 @@ h3 {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 0 140px 100vw;
+    border-width: 0 0 140px 100em;
     transform: rotate(180deg);
     border-color: transparent transparent transparent #151e43;
 }
@@ -279,7 +279,7 @@ nav img {
 #nav-content {
     overflow: auto;
     position: fixed;
-    top: 15px;
+    top: 50zpx;
     left: 0;
     z-index: 1200;
     width: 100%;
@@ -293,7 +293,7 @@ nav img {
 #nav-content li {
     list-style-type: none;
     font-size: 20px;
-    margin: 13px;
+    margin: 15px;
     text-align: center;
     vertical-align: center;
     border-bottom: 0.1px solid #fff;
@@ -308,17 +308,22 @@ nav img {
 #nav-content li:last-child{
     border-bottom: none;
 }
+
 #nav-input:checked ~ #nav-content {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);
     box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
 }
 
+/*
 #nav-content p{
     text-align: right;
     font-size: 30px;
     margin-right: 25px;
 }
+*/
+
+
 /*about*/
 #about {
     margin: 0 auto;
@@ -1200,7 +1205,7 @@ footer {
     }
 
     .header::before {
-        border-width: 0 0 100px 100vw;
+        border-width: 0 0 100px 100em;
         transform: rotate(180deg);
         border-color: transparent transparent transparent #151e43;
     }
