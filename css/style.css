@@ -130,6 +130,13 @@ h3 {
 
 }
 
+ .header-contents .recruit img{
+        width: 0.1px;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+    }
+
 .phone-only {
     font-size: 15px;
     text-decoration: none;
@@ -314,14 +321,6 @@ nav img {
     transform: translateX(0%);
     box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
 }
-
-/*
-#nav-content p{
-    text-align: right;
-    font-size: 30px;
-    margin-right: 25px;
-}
-*/
 
 
 /*about*/
