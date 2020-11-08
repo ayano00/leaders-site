@@ -1202,7 +1202,6 @@ footer {
     }
     .header-contents .recruit img{
         width: 80px;
-        z-index: 9999;
         position: absolute;
         right: 0;
         margin-right: 20px;
