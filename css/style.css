@@ -485,24 +485,31 @@ nav img {
     margin-right: 13%;
     margin-left: 13%;
 }
-
+.all-courses{
+   
+}
 .all-courses img {
-    height: 130px;
+    height: 135px;
 }
 
 .all-courses ul {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
     list-style: none;
 }
 
 .all-courses li {
     text-align: center;
-    width: 130px;
-    margin: 10px;
+    width: 135px;
+    margin: 11px;
 }
-
+.inline-block {
+	text-align: center;
+}
+.inline-block li {
+	display: inline-block;
+}
 .all-courses span {
     font-size: 12px;
 }
