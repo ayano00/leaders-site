@@ -95,7 +95,7 @@ h3 {
     margin: 5px;
 }
 
-.header-detail{
+.header-detail {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
@@ -104,9 +104,10 @@ h3 {
     position: relative;
     overflow: visible;
 }
+
 .right-dots {
     position: relative;
-     overflow: visible;
+    overflow: visible;
     margin-left: auto;
 }
 
@@ -115,14 +116,15 @@ h3 {
     margin: 0 auto;
     margin-left: auto;
     right: 13%;
-/*    top: 50px;*/
+    /*    top: 50px;*/
     width: 300px;
     position: absolute;
     z-index: 50;
 }
 
 .arrow {
-    right: 270px;;
+    right: 270px;
+    ;
     top: 450px;
     width: 30px;
     position: absolute;
@@ -130,12 +132,12 @@ h3 {
 
 }
 
- .header-contents .recruit img{
-        width: 0.1px;
-        position: absolute;
-        right: 0;
-        margin-right: 20px;
-    }
+.header-contents .recruit img {
+    width: 0.1px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
 
 .phone-only {
     font-size: 15px;
@@ -290,7 +292,7 @@ nav img {
     left: 0;
     z-index: 1200;
     width: 100%;
-    height: 160px ;
+    height: 160px;
     color: white;
     background: rgb(0, 0, 0, 0.5);
     transition: .4s ease-in-out;/ -webkit-transform: translateY(-140%);
@@ -312,7 +314,8 @@ nav img {
     /*カバーを表示*/
     opacity: .5;
 }
-#nav-content li:last-child{
+
+#nav-content li:last-child {
     border-bottom: none;
 }
 
@@ -418,7 +421,7 @@ nav img {
     width: 360px;
     height: 250px;
     margin-top: 25px;
-/*    margin-left: 25px;*/
+    /*    margin-left: 25px;*/
 }
 
 .program-yellow {
@@ -477,7 +480,10 @@ nav img {
 }
 
 .courses-detail {
-    margin: 80px 180px 80px 150px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 13%;
+    margin-left: 13%;
 }
 
 .all-courses img {
@@ -613,7 +619,10 @@ nav img {
 }
 
 .interview-detail {
-    margin: 180px 180px 80px 150px;
+    margin-top: 180px;
+    margin-bottom: 80px;
+    margin-right: 13%;
+    margin-left: 13%;
 }
 
 .mentor-now {
@@ -1129,18 +1138,15 @@ footer {
 }
 
 /*レスポンシブスマホ*/
-@media screen and (max-width: 1500px) {
-    
-
-}
+@media screen and (max-width: 1500px) {}
 
 @media screen and (min-width:480px) {
     #nav-open {
         display: none;
     }
-    
+
     .phone-only {
-/*        opacity: 0;*/
+        /*        opacity: 0;*/
         display: none;
     }
 }
@@ -1150,7 +1156,7 @@ footer {
         font-family: sans-serif;
     }
 
-/*
+    /*
     .phone-only {
         opacity: 1;
         display: block;
@@ -1160,7 +1166,7 @@ footer {
     .pc-only {
         opacity: 0;
     }
-    
+
     /*文字色*/
     h2 {
         font-size: 25px;
@@ -1191,20 +1197,24 @@ footer {
         transform: rotate(180deg);
         border-color: transparent transparent transparent #151e43;
     }
-.header-detail {
-    margin-top: 10px;
-    margin-right: 3%;
-    margin-left: 3%;
-}
+
+    .header-detail {
+        margin-top: 10px;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
     .header-contents {
         margin: 60px 10px 10px 10px;
     }
-    .header-contents .recruit img{
+
+    .header-contents .recruit img {
         width: 80px;
         position: absolute;
         right: 0;
         margin-right: 20px;
     }
+
     .header-contents .logo {
         width: 95%;
         align-content: center;
@@ -1296,7 +1306,7 @@ footer {
     .program .right-box img {
         width: 300px;
         height: 200px;
-        margin-right:none;
+        margin-right: none;
         align-content: center;
     }
 
